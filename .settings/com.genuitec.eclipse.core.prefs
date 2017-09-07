@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=src/conf/case-struts.xml,src/conf/mgr-struts.xml,WebRoot/js/jquery-ui.js
+validator.Unchecked=

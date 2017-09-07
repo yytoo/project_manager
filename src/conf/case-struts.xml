@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<!--  	<constant name="struts.enable.DynamicMethodInvocation" value="true" /> -->
+ 
+	<package name="projectManager.case" extends="struts-default" >
+        <action name="caseList" class="com.pm.action.CaseListAction" method="getCaseList">
+            <result name="caseList">/page/caseList.jsp</result>      
+        </action>    
+        <action name="casedetail" class="com.pm.action.CaseListAction" method="getDetail">
+            <result name="caseDetail">/page/CaseDetail.jsp</result>      
+        </action>  
+        <action name="updateCase" class="com.pm.action.CaseListAction" method="updateCase">
+           <result name="returnList" type="redirectAction">caseList?pageIndex=${pageIndex}</result>  
+        </action>  
+         <action name="uploadCaseImg" class="com.pm.util.UploadImg" method="fileUpload">
+           
+        </action>  
+        <action name="screeningCase" class="com.pm.action.CaseListAction" method="screeningCase">
+           <result name="caseList">/page/caseList.jsp</result>      
+        </action> 
+
+    </package>  
+
+</struts>    

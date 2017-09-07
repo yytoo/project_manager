@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+body{
+	font-family: Verdana, Arial,'宋体';
+    font-size: 12px;
+    margin:0;
+}
+.head2{
+	font-size:14px;
+	font-family:'微软雅黑';
+	font-weight:bold;
+	text-align:left;
+}
+.table{
+
+	margin-top:10px;
+	border-collapse:collapse;
+	border:1px solid #aaa;
+	width:1920px;
+}
+.table th{
+	vertical-align:baseline;
+	padding:5px 15px 5px 6px;
+	background-color:#d5d5d5;
+	text-align:left;
+	border:1px solid #aaa;
+
+}
+.table td{
+	vertical-align:text-top;
+	padding:6px 15px 6px 6px;
+
+	border:1px solid #aaa;
+}
+.table tr{
+	background-color:#efefef;
+}
+textarea{
+	width:100%;
+}
+
+.detailth{
+	width:10%;
+}
+.detailtd{
+	width:40%;
+}
+.detailtable{
+	width:1920px;
+}
+.buttons{
+	float:left;
+}

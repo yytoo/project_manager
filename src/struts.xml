@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<!--  	<constant name="struts.enable.DynamicMethodInvocation" value="true" /> -->
+ 
+<!-- 	<package name="projectManager.list" extends="struts-default" >
+        <action name="getlist" class="com.pm.action.GetListAction" method="getList1">
+            <result name="getlist1">/page/list.jsp</result>      
+        </action>
+        
+        <action name="getdetail" class="com.pm.action.GetListAction" method="getDetail">
+            <result name="getdetail">/page/detail.jsp</result>      
+        </action>
+        
+        <action name="updateProject" class="com.pm.action.GetListAction" method="updateProject">
+       		 <result name="getlist1" type="redirectAction">getlist</result>
+        </action>
+        
+        <action name="addProj" class="com.pm.action.GetListAction" method="addProj">
+       		 <result name="getlist1" type="redirectAction">getlist</result>
+        </action>
+    </package>  
+ -->
+
+	<constant name="struts.devMode" value="false" /> 
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+	<include file="conf/case-struts.xml"></include>
+	<include file="conf/mgr-struts.xml"></include>
+</struts>    
